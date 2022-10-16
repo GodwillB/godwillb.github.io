@@ -44,7 +44,7 @@ export default function About() {
         <title>About - Godwill Barasa</title>
         <meta
           name="description"
-          content="I’m Godwill Barasa. I live in Nairobi, Kenya, where I design the future."
+          content="I’m Godwill Barasa. I am a Software Engineer currently residing in Nairobi, Kenya. I build and occasionally design awesome."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
