@@ -1,86 +1,129 @@
-<!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
 <template>
-  <div class="bg-white pb-8 sm:pb-12 lg:pb-12">
-    <div class="overflow-hidden pt-8 sm:pt-12 lg:relative lg:py-48">
-      <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-24 lg:px-8">
-        <div>
-          <div>
-            <img class="h-11 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company" />
-          </div>
-          <div class="mt-20">
-            <div>
-              <a href="#" class="inline-flex space-x-4">
-                <span class="rounded bg-indigo-50 px-2.5 py-1 text-sm font-semibold text-indigo-600">What's new</span>
-                <span class="inline-flex items-center space-x-1 text-sm font-medium text-indigo-600">
-                  <span>Just shipped version 0.1.0</span>
-                  <ChevronRightIcon class="h-5 w-5" aria-hidden="true" />
-                </span>
-              </a>
-            </div>
-            <div class="mt-6 sm:max-w-xl">
-              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Server management for growing teams</h1>
-              <p class="mt-6 text-xl text-gray-500">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</p>
-            </div>
-            <form action="#" class="mt-12 sm:flex sm:w-full sm:max-w-lg">
-              <div class="min-w-0 flex-1">
-                <label for="hero-email" class="sr-only">Email address</label>
-                <input id="hero-email" type="email" class="block w-full rounded-md border border-gray-300 px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Enter your email" />
-              </div>
-              <div class="mt-4 sm:mt-0 sm:ml-3">
-                <button type="submit" class="block w-full rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:px-10">Notify me</button>
-              </div>
-            </form>
-            <div class="mt-6">
-              <div class="inline-flex items-center divide-x divide-gray-300">
-                <div class="flex flex-shrink-0 pr-5">
-                  <StarIcon class="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                  <StarIcon class="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                  <StarIcon class="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                  <StarIcon class="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                  <StarIcon class="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                </div>
-                <div class="min-w-0 flex-1 py-1 pl-5 text-sm text-gray-500 sm:py-3"><span class="font-medium text-gray-900">Rated 5 stars</span> by over <span class="font-medium text-indigo-600">500 beta users</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="relative bg-gray-50">
+    
 
-      <div class="sm:mx-auto sm:max-w-3xl sm:px-6">
-        <div class="py-12 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <div class="hidden sm:block">
-            <div class="absolute inset-y-0 left-1/2 w-screen rounded-l-3xl bg-gray-50 lg:left-80 lg:right-0 lg:w-full" />
-            <svg class="absolute top-8 right-1/2 -mr-3 lg:left-0 lg:m-0" width="404" height="392" fill="none" viewBox="0 0 404 392">
-              <defs>
-                <pattern id="837c3e70-6c3a-44e6-8854-cc48c737b659" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-                </pattern>
-              </defs>
-              <rect width="404" height="392" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)" />
-            </svg>
-          </div>
-          <div class="relative -mr-40 pl-4 sm:mx-auto sm:max-w-3xl sm:px-0 lg:h-full lg:max-w-none lg:pl-12">
-            <img class="w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none" src="https://tailwindui.com/img/component-images/top-nav-with-multi-column-layout-screenshot.jpg" alt="" />
+    <main class="lg:relative">
+      <div class="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-48 lg:text-left">
+        <div class="px-4 sm:px-8 lg:w-1/2 xl:pr-16">
+          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+            <span class="block xl:inline">Hallo !</span>
+            {{ ' ' }}
+           
+          </h1>
+          <h1 class="text-4xl font-bold mt-5 tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+            <span class="block xl:inline">I'm <span class="block text-indigo-600 xl:inline">Godwill Barasa</span> </span>
+            {{ ' ' }}
+            
+          </h1>
+          <h1 class="text-xl font-bold mt-5 tracking-tight text-gray-900 sm:text-3xl md:text-3xl lg:text-2xl xl:text-2xl">
+            <span class="block xl:inline">A web developer,  technical writer and speaker</span>
+            {{ ' ' }}
+            
+          </h1>
+          <p class="mx-auto mt-3 max-w-md text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+          <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
+            <div class="rounded-md shadow">
+              <a href="#" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg">Download CV</a>
+            </div>
+            <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+              <a href="#" class="flex w-full items-center justify-center rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50 md:py-4 md:px-10 md:text-lg">Read My Articles</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <div class="relative h-64 w-full sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2">
+        <img class="absolute inset-0 h-full w-full object-cover" src="/img/godwill.codes.jpg" alt="" />
+      </div>
+    </main>
   </div>
+  
 </template>
 
+
 <script setup>
-import { ChevronRightIcon, StarIcon } from '@heroicons/vue/20/solid'
+import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/vue'
+import {
+  ArrowPathIcon,
+  Bars3Icon,
+  BookmarkSquareIcon,
+  CalendarIcon,
+  ChartBarIcon,
+  CursorArrowRaysIcon,
+  LifebuoyIcon,
+  PhoneIcon,
+  PlayIcon,
+  ShieldCheckIcon,
+  Squares2X2Icon,
+  XMarkIcon,
+} from '@heroicons/vue/24/outline'
+import { ChevronDownIcon } from '@heroicons/vue/20/solid'
+
+useHead({
+  title: 'Godwill Barasa - Software Engineer, Technical Writer and Speaker',
+  meta: [
+    { name: 'description', content: 'My amazing site.' }
+  ],
+  bodyAttrs: {
+    class: 'test'
+  },
+  script: [ { children: 'console.log(\'Hello world\')' } ]
+})
+
+const features = [
+  {
+    name: 'Analytics',
+    href: '#',
+    description: 'Get a better understanding of where your traffic is coming from.',
+    icon: ChartBarIcon,
+  },
+  {
+    name: 'Engagement',
+    href: '#',
+    description: 'Speak directly to your customers in a more meaningful way.',
+    icon: CursorArrowRaysIcon,
+  },
+  { name: 'Security', href: '#', description: "Your customers' data will be safe and secure.", icon: ShieldCheckIcon },
+  {
+    name: 'Integrations',
+    href: '#',
+    description: "Connect with third-party tools that you're already using.",
+    icon: Squares2X2Icon,
+  },
+  {
+    name: 'Automations',
+    href: '#',
+    description: 'Build strategic funnels that will drive your customers to convert',
+    icon: ArrowPathIcon,
+  },
+]
+const callsToAction = [
+  { name: 'Watch Demo', href: '#', icon: PlayIcon },
+  { name: 'Contact Sales', href: '#', icon: PhoneIcon },
+]
+const resources = [
+  {
+    name: 'Help Center',
+    description: 'Get all of your questions answered in our forums or contact support.',
+    href: '#',
+    icon: LifebuoyIcon,
+  },
+  {
+    name: 'Guides',
+    description: 'Learn how to maximize our platform to get the most out of it.',
+    href: '#',
+    icon: BookmarkSquareIcon,
+  },
+  {
+    name: 'Events',
+    description: 'See what meet-ups and other events we might be planning near you.',
+    href: '#',
+    icon: CalendarIcon,
+  },
+  { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
+]
+const recentPosts = [
+  { id: 1, name: 'Boost your conversion rate', href: '#' },
+  { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
+  { id: 3, name: 'Improve your customer experience', href: '#' },
+]
 </script>
